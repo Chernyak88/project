@@ -1,6 +1,28 @@
+@font-face {
+  font-family: "Roboto-Bold";  
+  src: url("/fonts/Roboto-Bold_1.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";  
+  src: url("/fonts/Roboto-Light_1.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Italic";  
+  src: url("/fonts/Roboto-LightItalic_1.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
 
 .wrapper {
@@ -13,39 +35,40 @@
   height: 75px;
   background: #4b73b5;
   margin-bottom: 13px;
+  position: relative;
 }
 
-.logo__img {
-  margin-left: 21px;
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .contacts__phone {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-family: "Roboto-Bold";
   font-size: 21px;
-  font-family: "Roboto";
-  color: #ffffff;
-  font-weight: bold;
+  color: #fff;
   text-decoration: none;
 }
 
-.sidebar {
-  width: 200px;
-  float:left;
-  margin-top:35px;
+.contacts__schedule {
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  font-family: "Roboto-Bold";
+  font-size: 14px;
+  color:#b6c3dd;
 }
 
-.menu__list {
-  margin-left: 21px;
-  list-style-type: none;
+.sidebar {
+  float: left;
+  width: 200px;
 }
 
 .content {
-  width:900px;
-  float:left;
-}
-
-.section__title {
-    font-size: 49px;
-    font-family: "Roboto";
-    color: #000000;
-    font-weight: bold;
+  float: left;
+  width: 900px;
 }
