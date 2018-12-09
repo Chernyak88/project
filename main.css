@@ -1,119 +1,206 @@
 @font-face {
-  font-family: 'robotobold';
-  src: url('roboto-bold_1-webfont.woff2') format('woff2'),
-       url('roboto-bold_1-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: "roboto";
+  src: url("./fonts/roboto-bold_1-webfont.woff2") format("woff2"),
+       url("./fonts/roboto-bold_1-webfont.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'robotolight';
-  src: url('roboto-light_1-webfont.woff2') format('woff2'),
-       url('roboto-light_1-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: "roboto";
+  src: url("./fonts/roboto-light_1-webfont.woff2") format("woff2"),
+       url("./fonts/roboto-light_1-webfont.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'robotolight_italic';
-  src: url('roboto-lightitalic_1-webfont.woff2') format('woff2'),
-       url('roboto-lightitalic_1-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "roboto";
+  src: url("./fonts/roboto-lightitalic_1-webfont.woff2") format("woff2"),
+       url("./fonts/roboto-lightitalic_1-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
 }
 
-* {
+body {
+  font-family: "roboto", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.42;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
-  width: 1100px;
-  margin: 0 auto;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 .header {
-  width: 1100px;
-  height: 75px;
   background: #4b73b5;
+  color: #fff;
   margin-bottom: 13px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1065px;
+}
+
+.header__container {
+  height: 77px;
   position: relative;
 }
 
 .logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 21px;
+  left: 0;
+}
+
+.contacts {
+  position: absolute;
+  width: 175px;
+  top: 15px;
+  right: 0;
+  text-align: right;
 }
 
 .contacts__phone {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  font-family: 'robotobold';
   font-size: 21px;
-  color: #fff;
+  font-weight: bold;
+  color: inherit;
   text-decoration: none;
 }
 
 .contacts__schedule {
+  display: inline-block;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.702);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.702);
+}
+
+.contacts__schedule .tooltip {
+  visibility: hidden;
   position: absolute;
-  bottom: 17px;
-  right: 20px;
-  font-family: 'robotobold';
-  font-size: 14px;
-  color:#b6c3dd;
+  width: 130px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding: 10px 10px;
+  border-radius: 2px;
+  z-index: 1;
+  top: 170%;
+  left: -45%;
+}
+
+.contacts__schedule:hover .tooltip {
+  visibility: visible;
+}
+
+.contacts__schedule .tooltip:after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 92%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.tooltip__worktime {
+  color: #6385d0;
+}
+
+.tooltip__dinner {
+  font-weight: normal;
 }
 
 .sidebar {
   float: left;
-  width: 200px;
-}
-
-.menu__list {
-  list-style-type: none;
+  width: 178px;
+  padding-top: 14px;
 }
 
 .menu__link{
-  text-decoration: none;
-}
-
-.menu__icon{
-  display: inline-block;
-  margin-left: 20px;
-  margin-top: 30px; 
-}
-
-.menu__title{
-  display: inline-block;
-  margin-left: 20px;
-  text-transform: uppercase;
-  font-family: 'robotobold';
-  font-size: 12px;
   color: #4b73b5;
-  letter-spacing: 2px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.menu__link:hover {
+  color:#000;
+}
+
+.menu__link:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 18px;
+  margin-right: 16px;
+  background: center center no-repeat;
+}
+
+.menu__link--main:before {
+  background-image: url('./img/icons/menu/main_icon.png');
+}
+
+.menu__link--feed:before {
+  background-image: url('./img/icons/menu/feed_icon.png');
+}
+
+.menu__link--feed:hover:before {
+  background-image: url('./img/icons/menu/feed_icon_active.png');
+}
+
+.menu__link--team:before {
+  background-image: url('./img/icons/menu/team_icon.png');
+}
+
+.menu__link--team:hover:before {
+  background-image: url('./img/icons/menu/team_icon_active.png');
+}
+
+.menu__item--active .menu__link--main {
+  color:#000;
 }
 
 .content {
   float: left;
-  width: 900px;
+  width: 865px;
+}
+
+.tariffs-section {
+  margin-bottom: 15px;
 }
 
 .section__title {
-  font-family: 'robotobold';
   font-size: 49px;
-}
-
-.tariffs {
-  list-style-type: none;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .tariffs__item {
   display: inline-block;
   width: 200px;
-  height: 460px;
-  margin-top: 20px;
-  padding: 25px 35px;
+  height: 420px;
+  padding: 40px 30px;
   text-align: center;
 }
 
@@ -123,19 +210,201 @@
 }
 
 .tariffs__picture {
+  position: relative;
+  margin: 0 auto;
   width: 70px;
   height: 70px;
   background: #4b73b5;
   border-radius: 50%;
+}
+
+.tariffs__picture--img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tariffs__name {
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.tariffs__text {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.tariffs__options li {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.tariffs__options li:before {
+  content: '\2027';
+  margin-right: 22px;
+}
+
+.tariffs__price {
+  padding-top: 20px;
+  font-size: 54px;
+}
+
+.tariffs__price:before {
+  content: '$';
+  font-size: 32px;
+}
+
+.news__photo, .news-desc {
+  display: inline-block;
+}
+
+.news__photo{
+  margin-right: 12px;
+}
+
+.news__photo-img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.news-desc {
+  width: 652px;
+  height: 170px;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.news__date {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #737272;
+}
+
+.news__name {
+  font-weight: bold;
+}
+
+.news__text {
+  margin: 5px auto;
+  line-height: 1.6em;
+}
+
+hr {
+  border: none;
+  background-color: #f5f5f5;
+  height: 2px;
+}
+
+.pagination {
+  padding-top: 45px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pagination__item {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+
+.pagination__list:before {
+  content:'Страница 1 из 7';
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.pagination__link {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  padding: 3px 10px;
+}
+
+.pagination__item .pagination__link--active, .pagination__link:hover {
+  color: #fff;
+  background-color: #4b73b5;
+  border-radius: 2px;
+}
+
+.pagination__prev {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+}
+
+.footer {
+  background: #4b73b5;
+  color: #fff;
+  clear: both;
+}
+
+.footer__container {
+  position: relative;
+  height: 75px;
+}
+
+.author {
+  position: absolute;
+  left: 0;
+  font-size: 13px;
+  width: 250px;
+  height: 50px;
+}
+
+.loft__link {
+  color: #fff;
+}
+
+.footer_logo {
+  position: absolute;
+  top: 20px;
+  left: 44%;
+}
+
+.social {
+  position: absolute;
+  top: 15px;
+  right: 7px;
+}
+
+.social__display {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.networks__item {
+  display: inline-block;
   margin: 0 auto;
   position: relative; 
 }
 
-.tariffs__picture-img {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.networks__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #d2def3;
+  border-radius: 50%;
+  margin: 5px 3px;
+  vertical-align: middle;
 }
+
+.networks-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.networks__link:hover {
+  background: #fff;
+}
+  
