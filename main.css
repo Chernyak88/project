@@ -32,7 +32,7 @@ body {
   padding: 0;
 }
 
-ul {
+ul, p {
   margin: 0;
   padding: 0;
 }
@@ -42,18 +42,15 @@ ul li {
 }
 
 .header {
+  height: 77px;
   background: #4b73b5;
   color: #fff;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .container {
+  width: 1060px;
   margin: 0 auto;
-  width: 1065px;
-}
-
-.header__container {
-  height: 77px;
   position: relative;
 }
 
@@ -63,15 +60,10 @@ ul li {
   left: 0;
 }
 
-.contacts {
-  position: absolute;
-  width: 175px;
+.contacts__phone {
   top: 15px;
   right: 0;
-  text-align: right;
-}
-
-.contacts__phone {
+  position: absolute;
   font-size: 21px;
   font-weight: bold;
   color: inherit;
@@ -80,7 +72,9 @@ ul li {
 
 .contacts__schedule {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 42px;
+  right: 0;
   font-size: 13px;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.702);
@@ -99,8 +93,8 @@ ul li {
   padding: 10px 10px;
   border-radius: 2px;
   z-index: 1;
-  top: 170%;
-  left: -45%;
+  top: 210%;
+  left: -60%;
 }
 
 .contacts__schedule:hover .tooltip {
@@ -129,12 +123,12 @@ ul li {
 .sidebar {
   float: left;
   width: 178px;
-  padding-top: 14px;
+  padding-top: 17px;
 }
 
 .menu__link{
   color: #4b73b5;
-  line-height: 50px;
+  line-height: 48px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12px;
@@ -152,7 +146,7 @@ ul li {
   vertical-align: middle;
   width: 23px;
   height: 18px;
-  margin-right: 16px;
+  margin-right: 15px;
   background: center center no-repeat;
 }
 
@@ -180,19 +174,24 @@ ul li {
   color:#000;
 }
 
+.main {
+  height: 1743px;
+  margin-bottom: 30px;
+}
+
 .content {
   float: left;
-  width: 865px;
+  width: 880px;
 }
 
 .tariffs-section {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .section__title {
   font-size: 49px;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-bottom: 20px;
 }
 
@@ -202,6 +201,7 @@ ul li {
   height: 420px;
   padding: 40px 30px;
   text-align: center;
+  border: 1px solid transparent;
 }
 
 .tariffs__item:hover {
@@ -212,6 +212,7 @@ ul li {
 .tariffs__picture {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 30px;
   width: 70px;
   height: 70px;
   background: #4b73b5;
@@ -226,17 +227,20 @@ ul li {
 }
 
 .tariffs__name {
-  padding-top: 30px;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.2em;
+  margin-bottom: 18px;
 }
 
 .tariffs__text {
   font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 0;
+  line-height: 34px;
+}
+
+.tariffs__options {
+  margin-bottom: 20px;
 }
 
 .tariffs__options li {
@@ -251,7 +255,6 @@ ul li {
 }
 
 .tariffs__price {
-  padding-top: 20px;
   font-size: 54px;
 }
 
@@ -260,12 +263,22 @@ ul li {
   font-size: 32px;
 }
 
+.news-section {
+  margin-bottom: 30px;
+}
+
+.news-section__title {
+  margin-bottom: 55px;
+}
+
 .news__photo, .news-desc {
   display: inline-block;
+  margin-bottom: 30px;
 }
 
 .news__photo{
   margin-right: 12px;
+  vertical-align: bottom;
 }
 
 .news__photo-img {
@@ -274,12 +287,19 @@ ul li {
   border-radius: 50%;
 }
 
+.news__item {
+  border-bottom: 2px solid #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.news__item:nth-child(3) {
+  border-bottom: none;
+}
+
 .news-desc {
   width: 652px;
   height: 170px;
   font-size: 18px;
-  padding-top: 30px;
-  padding-bottom: 10px;
 }
 
 .news__date {
@@ -293,26 +313,18 @@ ul li {
 }
 
 .news__text {
-  margin: 5px auto;
-  line-height: 1.6em;
-}
-
-hr {
-  border: none;
-  background-color: #f5f5f5;
-  height: 2px;
+  line-height: 1.8em;
 }
 
 .pagination {
-  padding-top: 45px;
-  margin-bottom: 60px;
   text-align: center;
 }
 
 .pagination__item {
   display: inline-block;
-  width: 21px;
-  height: 21px;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
 }
 
 .pagination__list:before {
@@ -326,7 +338,7 @@ hr {
   font-size: 14px;
   color: #000;
   text-decoration: none;
-  padding: 3px 10px;
+  padding: 2px 8px;
 }
 
 .pagination__item .pagination__link--active, .pagination__link:hover {
@@ -342,18 +354,16 @@ hr {
 }
 
 .footer {
+  position: relative;
+  height: 75px;
   background: #4b73b5;
   color: #fff;
   clear: both;
 }
 
-.footer__container {
-  position: relative;
-  height: 75px;
-}
-
 .author {
   position: absolute;
+  top: 10px;
   left: 0;
   font-size: 13px;
   width: 250px;
