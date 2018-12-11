@@ -1,0 +1,11 @@
+@import url('./layout/fonts.css');
+@import url('./layout/normalize.css');
+@import url('./layout/base.css');
+@import url('./layout/header.css');
+@import url('./layout/logo.css');
+@import url('./layout/contacts.css');
+@import url('./layout/sidebar.css');
+@import url('./layout/tariffs.css');
+@import url('./layout/news.css');
+@import url('./layout/pagination.css');
+@import url('./layout/footer.css');

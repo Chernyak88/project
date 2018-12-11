@@ -1,0 +1,64 @@
+.footer {
+  position: relative;
+  height: 75px;
+  background: #4b73b5;
+  color: #fff;
+  clear: both;
+}
+
+.author {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 13px;
+  width: 250px;
+  height: 50px;
+}
+
+.loft__link {
+  color: #fff;
+}
+
+.footer_logo {
+  position: absolute;
+  top: 20px;
+  left: 44%;
+}
+
+.social {
+  position: absolute;
+  top: 15px;
+  right: 7px;
+}
+
+.social__display {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.networks__item {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative; 
+}
+
+.networks__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #d2def3;
+  border-radius: 50%;
+  margin: 5px 3px;
+  vertical-align: middle;
+}
+
+.networks-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.networks__link:hover {
+  background: #fff;
+}
