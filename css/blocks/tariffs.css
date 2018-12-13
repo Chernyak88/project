@@ -1,5 +1,5 @@
 .tariffs-section {
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 .section__title {
@@ -14,12 +14,12 @@
 }
 
 .tariffs__item {
-  display: inline-block;
-  width: 200px;
-  height: 420px;
+  width: 245px;
+  height: 455px;
   padding: 40px 30px;
-  text-align: center;
   border: 1px solid transparent;
+  text-align: center;
+  margin-right: 25px;
 }
 
 .tariffs__item:hover {

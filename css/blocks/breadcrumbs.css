@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding-top: 10px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #6385d0;
+}
+
+.breadcrumbs__link--active {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumbs__link, .breadcrumbs__separator {
+  margin-right: 3px;
+}

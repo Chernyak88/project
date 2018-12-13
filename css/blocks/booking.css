@@ -1,0 +1,25 @@
+.booking {
+  height: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4bb56b;
+  background-image: url('../../img/comments/pattern.png');
+  margin-bottom: 40px;
+}
+
+.booking__text {
+  width: 650px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.booking__text--link, .booking__text--phone  {
+  font-weight: bold;
+  color: #fff;
+}
+
+.booking__text--phone {
+  text-decoration: none;
+}

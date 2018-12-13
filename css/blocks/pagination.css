@@ -1,12 +1,18 @@
 .pagination {
-  text-align: center;
+  align-self: center;
+}
+
+.pagination__list {
+  display: flex;
+  width: 340px;
+  height: 25px;
+  justify-content: space-between;
 }
 
 .pagination__item {
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin-right: 3px;
 }
 
 .pagination__list:before {
@@ -20,13 +26,17 @@
   font-size: 14px;
   color: #000;
   text-decoration: none;
-  padding: 2px 8px;
+  padding: 4px 8px;
 }
 
-.pagination__item .pagination__link--active, .pagination__link:hover {
+.pagination__item .pagination__link--active {
   color: #fff;
   background-color: #4b73b5;
   border-radius: 2px;
+}
+
+.pagination__link:hover {
+  color: #1c5bc3;
 }
 
 .pagination__prev {

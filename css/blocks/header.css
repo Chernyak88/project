@@ -1,13 +1,13 @@
 .header {
-  height: 77px;
+  height: 76px;
   background: #4b73b5;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 29px;
 }
 
 .header__container {
   display: flex;
-  height: 77px;
+  height: 76px;
   justify-content: space-between;
   align-items: center;
 }

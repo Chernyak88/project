@@ -1,0 +1,40 @@
+.form-section {
+  height: 430px;
+  width: 670px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 40px 65px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__block {
+  width: 270px;
+  margin-bottom: 10px;
+  line-height: 1.8em;
+}
+
+.form__block:nth-child(3) {
+  margin-right: -20px;
+}
+
+.form__block--input {
+  width: 270px;
+  height: 45px;
+  border: none;
+}
+
+.form__block--textarea {
+  width: 570px;
+}
+
+.textarea {
+  border: none;
+  resize: none;
+  height: 90px;
+  width: 560px;
+}
