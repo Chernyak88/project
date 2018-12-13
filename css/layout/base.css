@@ -40,13 +40,13 @@ ul li {
 }
 
 .main {
-  height: 1743px;
   margin-bottom: 30px;
 }
 
 .content {
-  float: left;
   width: 880px;
+  display: flex;
+  flex-direction: column;
 }
 
 button {

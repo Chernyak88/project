@@ -1,5 +1,4 @@
 .sidebar {
-  float: left;
   width: 178px;
   padding-top: 17px;
 }
@@ -18,6 +17,10 @@
   color:#000;
 }
 
+.menu__item--active .menu__link--main {
+  color:#000;
+}
+
 .menu__link:before {
   content: '';
   display: inline-block;
@@ -29,25 +32,21 @@
 }
 
 .menu__link--main:before {
-  background-image: url('./img/icons/menu/main_icon.png');
+  background-image: url('../../img/icons/menu/main_icon.png');
 }
 
 .menu__link--feed:before {
-  background-image: url('./img/icons/menu/feed_icon.png');
+  background-image: url('../../img/icons/menu/feed_icon.png');
 }
 
 .menu__link--feed:hover:before {
-  background-image: url('./img/icons/menu/feed_icon_active.png');
+  background-image: url('../../img/icons/menu/feed_icon_active.png');
 }
 
 .menu__link--team:before {
-  background-image: url('./img/icons/menu/team_icon.png');
+  background-image: url('../../img/icons/menu/team_icon.png');
 }
 
 .menu__link--team:hover:before {
-  background-image: url('./img/icons/menu/team_icon_active.png');
-}
-
-.menu__item--active .menu__link--main {
-  color:#000;
+  background-image: url('../../img/icons/menu/team_icon_active.png');
 }
