@@ -1,0 +1,32 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  width: 280px;
+  height: 380px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.team__photo--img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.team__name {
+  font-weight: bold;
+}
+
+.team__position {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4b73b5;
+}
+
+.team__text {
+  font-size: 14px;
+}
+
