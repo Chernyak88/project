@@ -165,21 +165,23 @@
               <form action="#" class="form">
                 <h2 class="section__title">Оставить отзыв</h2>
                 <div class="form__block">
-                  <label for="username">Ваше имя</label><br>
-                  <input class="form__block--input" type="text" name="username" value="Андрей"/>
+                  <label>Ваше имя
+                    <input class="form__block--input" type="text" placeholder="Андрей"/>
+                  </label>
                 </div>
                 <div class="form__block">
-                  <label for="vk">Ссылка на профиль VK</label>
-                  <input class="form__block--input" type="text" name="vk" value="vk.com/example"/>
+                  <label>Ссылка на профиль VK
+                    <input class="form__block--input" type="text" placeholder="vk.com/example"/>
+                  </label>
                 </div>
                 <div class="form__block form__block--textarea">
                   <label for="textarea">Текст отзыва</label>
-                  <textarea class="textarea" name="textarea" value="Мне понравилось"></textarea>
+                  <textarea class="textarea" name="textarea" placeholder="Мне понравилось"></textarea>
                 </div>
                 <div class="form__block">
                   <p class="form__block--text">Отображать фото в отзыве?</p>
-                  <label>Да<input type="radio" name="radio" value="yes" checked></label>
-                  <label>Нет<input type="radio" name="radio" value="no"></label>
+                  <label><input class="radio" type="radio" name="radio" checked><span class="radio__yes">&nbsp&nbspДа</span></label>
+                  <label><input class="radio" type="radio" name="radio"><span class="radio__no">&nbsp&nbspНет</span></label>
                 </div>
                 <div class="form__button">
                   <button class="form__button--item" type="submit">Отправить</button>
