@@ -1,5 +1,6 @@
 .pagination {
   align-self: center;
+  margin-right: -17px;
 }
 
 .pagination__list {

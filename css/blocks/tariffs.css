@@ -1,5 +1,5 @@
 .tariffs-section {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 
 .section__title {
@@ -14,8 +14,8 @@
 }
 
 .tariffs__item {
-  width: 250px;
-  height: 455px;
+  width: 28.3%;
+  min-height: 455px;
   padding: 40px 30px;
   border: 1px solid transparent;
   text-align: center;
@@ -49,21 +49,21 @@
   font-size: 11px;
   font-weight: bold;
   letter-spacing: 0.2em;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .tariffs__text {
   font-size: 18px;
-  line-height: 34px;
+  line-height: 32px;
 }
 
 .tariffs__options {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .tariffs__options li {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 34px;
   text-align: left;
 }
 

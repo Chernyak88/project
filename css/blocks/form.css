@@ -1,9 +1,10 @@
 .form-section {
-  height: 430px;
-  width: 670px;
+  min-height: 430px;
+  width: 66%;
   background-color: #f5f5f5;
   margin: 0 auto;
-  padding: 40px 65px;
+  padding: 0 65px;
+  padding-top: 40px;
 }
 
 .form {
@@ -12,14 +13,14 @@
   justify-content: space-between;
 }
 
-.form__block {
-  width: 270px;
-  margin-bottom: 10px;
-  line-height: 1.8em;
+.form__title {
+  margin-bottom: 3px;
 }
 
-.form__block:nth-child(3) {
-  margin-right: -20px;
+.form__block {
+  width: 50%;
+  margin-bottom: 15px;
+  line-height: 1.6em;
 }
 
 .form__block--input {
@@ -30,21 +31,21 @@
 }
 
 .form__block--textarea {
-  width: 570px;
+  width: 550px;
 }
 
 .textarea {
   border: none;
   resize: none;
   height: 90px;
-  width: 560px;
+  width: 550px;
   padding: 10px;
 }
 
 .radio {
   position: relative;
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -57,8 +58,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   border: 2px solid #4b73b5;
@@ -98,3 +99,5 @@
   content: url('../../img/icons/button.png');
   margin-left: 10px;
 }
+
+
