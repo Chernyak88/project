@@ -14,12 +14,11 @@
 }
 
 .tariffs__item {
-  width: 28.3%;
+  width: 30.5%;
   min-height: 455px;
   padding: 40px 30px;
   border: 1px solid transparent;
   text-align: center;
-  margin-right: 25px;
 }
 
 .tariffs__item:hover {

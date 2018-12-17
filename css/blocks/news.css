@@ -22,7 +22,8 @@
 }
 
 .news_appearance {
-  width: 20.5%;
+  width: 20%;
+  margin-right: 5px;
 }
 
 .news__photo, .news-desc {
@@ -33,18 +34,19 @@
 .news__photo{
   display: inline-block;
   overflow: hidden;
-  margin-right: 20px;
   vertical-align: bottom;
   border-radius: 50%;
 }
 
 .news__photo-img {
   display: block;
+  width: 160px;
+  height: 160px;
   max-width: 100%;
 }
 
 .news-desc {
-  width: 75%;
+  width: 77%;
   font-size: 18px;
 }
 
