@@ -5,7 +5,11 @@
 }
 
 .intro__section {
-  margin: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: jump 1.5s;
 }
 
 .intro__section:hover .intro__button--btn {
@@ -48,7 +52,25 @@
   background-image: url('../../img/icons/menu/spritemenu.png');
   background-position: -164px -10px;
   margin-left: 5px;
-  top: 13px;
+  top: 14px;
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    top: 47%;
+  }
+  85% {
+    top: 50%;
+  }
+  95%{
+    top: 47%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 
