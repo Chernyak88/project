@@ -53,10 +53,9 @@
           <div class="content">
               <nav class="breadcrumbs">
                 <ul class="breadcrumbs__list">
-                  <li class="breadrcumbs__item">
+                  <li class="breadcrumbs__item">
                     <a href="./index.html" class="breadcrumbs__link">Главная</a>
                   </li>
-                  <div class="breadcrumbs__separator">/</div>
                   <li class="breadcrumbs__item">
                     <a href="#" class="breadcrumbs__link breadcrumbs__link--active">Отзывы</a>
                   </li>
@@ -172,35 +171,31 @@
                 или же позвонить по номеру круглосуточной поддержки <a href="tel:+78000039210" class="booking__text--phone">8 (800) 00-392-10</a>.  
             </div>
         </div>
-        <div class="container">
-            <div class="form-section">
-              <form action="#" class="form">
-                <h2 class="section__title form__title">Оставить отзыв</h2>
-                <div class="form__block">
-                  <label>Ваше имя
-                    <input class="form__block--input" type="text" placeholder="Андрей"/>
-                  </label>
-                </div>
-                <div class="form__block">
-                  <label>Ссылка на профиль VK
-                    <input class="form__block--input" type="text" placeholder="vk.com/example"/>
-                  </label>
-                </div>
-                <div class="form__block form__block--textarea">
-                  <label>Текст отзыва
-                    <textarea class="textarea" placeholder="Мне понравилось"></textarea>
-                  </label>
-                </div>
-                <div class="form__block">
-                  <p class="form__block--text">Отображать фото в отзыве?</p>
-                  <label><input class="radio" type="radio" name="radio" checked><span class="radio__yes">&nbsp&nbspДа</span></label>
-                  <label><input class="radio" type="radio" name="radio"><span class="radio__no">&nbsp&nbspНет</span></label>
-                </div>
-                <div class="form__button">
-                  <button class="form__button--item" type="submit"><span class="form__button--text">Отправить</span></button>
-                </div>     
-              </form>
-          </div>
+        <div class="form-section">
+              <h2 class="section__title form__title">Оставить отзыв</h2>
+              <form action="#" class="form"></form>
+              <div class="form__block">
+                <label class="form__label">Ваше имя
+                  <input class="form__block--input" type="text" placeholder="Андрей"/>
+                </label>
+              </div>
+              <div class="form__block">
+                <label class="form__label">Ссылка на профиль VK
+                  <input class="form__block--input" type="text" placeholder="vk.com/example"/>
+                </label>
+              </div>
+              <div class="form__block form__block--textarea">
+                <label class="form__label">Текст отзыва
+                  <textarea class="textarea" placeholder="Мне понравилось"></textarea>
+                </label>
+              </div>
+              <div class="form__block">
+                <p class="form__block--text">Отображать фото в отзыве?</p>
+                <label class="form__label"><input class="radio" type="radio" name="radio" checked><span class="radio__yes">&nbsp&nbspДа</span></label>
+                <label class="form__label"><input class="radio" type="radio" name="radio"><span class="radio__no">&nbsp&nbspНет</span></label>
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+            </form>
         </div>
       </main>
     </div>

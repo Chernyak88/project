@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.breadcrumbs__item:nth-child(1):after {
+  content: '/';
+}
+
 .breadcrumbs__link {
   font-size: 14px;
   font-style: italic;
@@ -17,8 +21,4 @@
 .breadcrumbs__link--active {
   text-decoration: none;
   color: #000;
-}
-
-.breadcrumbs__link, .breadcrumbs__separator {
-  margin-right: 3px;
 }
