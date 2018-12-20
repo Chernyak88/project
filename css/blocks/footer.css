@@ -37,27 +37,36 @@
   width: 140px;
 }
 
-.networks__item {
-  position: relative; 
-}
-
 .networks__link {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: #d2def3;
+  background-color: #d2def3;
   border-radius: 50%;
   margin: 5px 3px;
-  vertical-align: middle;
-}
-
-.networks-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-image: url('../../img/social/spritesocial.png');
 }
 
 .networks__link:hover {
-  background: #fff;
+  background-color: #fff;
+}
+
+.networks__link--vk {
+  background-position: -130px -3px;
+}
+
+.networks__link--fb {
+  background-position: -3px -6px;
+}
+
+.networks__link--google {
+  background-position: -33px -4px;
+}
+
+.networks__link--twitter {
+  background-position: -98px -4px;
+}
+
+.networks__link--mail {
+  background-position: -67px -4px;
 }

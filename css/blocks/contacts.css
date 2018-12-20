@@ -16,11 +16,21 @@
 .contacts__schedule {
   display: inline-block;
   position: relative;
+  cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.702);
   border-bottom: 1px solid rgba(255, 255, 255, 0.702);
+}
+
+.contacts__schedule:before {
+  content:'';
+  display: block;
+  position: absolute;
+  height: 50px;
+  left: 0;
+  right: 0;
 }
 
 .contacts__schedule .tooltip {
@@ -38,10 +48,19 @@
   z-index: 1;
   top: 230%;
   left: -60%;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0s linear 0.4s;
+}
+
+.contacts__schedule:hover {
+  color: #fff;
+  transition: 0.3s;
 }
 
 .contacts__schedule:hover .tooltip {
+  opacity: 1;
   visibility: visible;
+  transition-delay: 0s;
 }
 
 .contacts__schedule .tooltip:after {

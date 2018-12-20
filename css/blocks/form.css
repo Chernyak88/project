@@ -104,10 +104,26 @@
   position: relative;
 }
 
-.form__button--img {
+.form__button:after {
+  content: '';
+  display: inline-block;
   position: absolute;
+  height: 14px;
+  width: 15px;
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -199px -10px;
+  margin-left: 5px;
   top: 15px;
-  left: 125px;
+}
+
+.form__button:hover {
+  background-color: #fff;
+  color: #4b73b5;
+  transition: 0.2s;
+}
+
+.form__button:hover.form__button:after {
+  background-position: -164px -10px;
 }
 
 
