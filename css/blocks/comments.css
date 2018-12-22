@@ -3,13 +3,6 @@
   flex-direction: column;
 }
 
-.comments__main {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  margin-bottom: 45px;
-}
-
 .comments-section__title {
   margin-bottom: 25px;
   font-size: 49px;
