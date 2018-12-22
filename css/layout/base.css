@@ -43,6 +43,7 @@ ul li {
 }
 
 .container {
+  display: flex;
   width: 1060px;
   margin: 0 auto;
 }
