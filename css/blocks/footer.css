@@ -1,0 +1,72 @@
+.footer {
+  min-height: 75px;
+  background: #4b73b5;
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  min-height: 75px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  font-size: 13px;
+  width: 250px;
+  height: 50px;
+}
+
+.loft__link {
+  color: #fff;
+}
+
+.footer__logo-link {
+  margin-right: 100px;
+}
+
+.social__display {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.networks__list {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.networks__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #d2def3;
+  border-radius: 50%;
+  margin: 5px 3px;
+  background-image: url('../../img/social/spritesocial.png');
+}
+
+.networks__link:hover {
+  background-color: #fff;
+}
+
+.networks__link--vk {
+  background-position: -130px -3px;
+}
+
+.networks__link--fb {
+  background-position: -3px -6px;
+}
+
+.networks__link--google {
+  background-position: -33px -4px;
+}
+
+.networks__link--twitter {
+  background-position: -98px -4px;
+}
+
+.networks__link--mail {
+  background-position: -67px -4px;
+}

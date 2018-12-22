@@ -1,0 +1,139 @@
+.form-section__container {
+  min-height: 430px;
+  width: 680px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 0 65px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-section__title {
+  font-size: 49px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form__block {
+  width: 270px;
+  line-height: 1.6em;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.form__block:nth-child(4) {
+  margin: 0;
+}
+
+.form__block--input {
+  width: 270px;
+  height: 45px;
+  border: none;
+  padding: 10px;
+}
+
+.form__block--textarea {
+  width: 560px;
+}
+
+.textarea {
+  border: none;
+  resize: none;
+  height: 90px;
+  width: 560px;
+  padding: 10px;
+}
+
+.radio {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+.radio::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #4b73b5;
+}
+
+.radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4b73b5;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.radio__yes, .radio__no {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.form__button {
+  width: 145px;
+  height: 45px;
+  background-color: #4b73b5;
+  border-radius: 3px;
+  color: #fff;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding-left: 17px;
+  margin: auto;
+  position: relative;
+}
+
+.form__button:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 14px;
+  width: 15px;
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -199px -10px;
+  margin-left: 5px;
+  top: 15px;
+}
+
+.form__button:hover {
+  background-color: #fff;
+  color: #4b73b5;
+  transition: 0.1s;
+}
+
+.form__button:hover.form__button:after {
+  background-position: -164px -10px;
+}
+
+

@@ -1,0 +1,61 @@
+.sidebar {
+  width: 16.8%;
+}
+
+.menu__link{
+  color: #4b73b5;
+  line-height: 49px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.menu__link:hover {
+  color:#000;
+}
+
+.menu__link--active {
+  color:#000;
+}
+
+.menu__link:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 18px;
+  margin-right: 14px;
+  background: center center no-repeat;
+}
+
+.menu__link--main:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -90px -10px; 
+}
+
+.menu__link--main:hover:before, .menu__link--main.menu__link--active:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -127px -10px;
+}
+
+.menu__link--feed:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -10px -10px;
+}
+
+.menu__link--feed:hover:before, .menu__link--feed.menu__link--active:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -50px -10px;
+}
+
+.menu__link--team:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -234px -10px;
+}
+
+.menu__link--team:hover:before, .menu__link--team.menu__link--active:before {
+  background-image: url('../../img/icons/menu/spritemenu.png');
+  background-position: -277px -10px;
+}

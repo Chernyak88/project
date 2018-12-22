@@ -1,0 +1,47 @@
+.pagination {
+  align-self: center;
+  margin-right: -17px;
+}
+
+.pagination__list {
+  display: flex;
+  width: 340px;
+  height: 25px;
+  justify-content: space-between;
+}
+
+.pagination__item {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.pagination__list:before {
+  content:'Страница 1 из 7';
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.pagination__link {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.pagination__item .pagination__link--active {
+  color: #fff;
+  background-color: #4b73b5;
+  border-radius: 2px;
+}
+
+.pagination__link:hover {
+  color: #1c5bc3;
+}
+
+.pagination__prev {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+}
