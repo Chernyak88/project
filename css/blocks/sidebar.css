@@ -67,3 +67,7 @@
   background-image: url('../../img/icons/menu/spritemenu.png');
   background-position: -277px -10px;
 }
+
+.sidebar-team {
+  margin-bottom: 30px;
+}

@@ -47,7 +47,7 @@
   border-radius: 2px;
   z-index: 1;
   top: 230%;
-  left: -60%;
+  left: -45%;
   opacity: 0;
   transition: opacity 0.4s, visibility 0s linear 0.4s;
 }
@@ -68,8 +68,8 @@
   position: absolute;
   bottom: 100%;
   left: 92%;
-  margin-left: -5px;
-  border-width: 8px;
+  margin-left: -10px;
+  border-width: 10px;
   border-style: solid;
   border-color: transparent transparent #fff transparent;
 }
