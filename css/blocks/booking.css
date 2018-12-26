@@ -1,17 +1,16 @@
 .booking {
-  height: 172px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('../../img/comments/pattern.png') center center #4bb56b;
-  margin-bottom: 60px;
+  min-height: 290px;
+  width: 102%;
+  background: url('../../img/comments/pattern.png') center center #4b73b5;
+  margin-bottom: 26px;
+  text-align: center;
 }
 
 .booking__text {
-  width: 650px;
   font-size: 18px;
   color: #fff;
   line-height: 1.7em;
+  padding: 12px 15px;
   margin: auto;
 }
 
