@@ -1,10 +1,10 @@
-.intro {
+.wrapper--intro {
   background-image: url('../../img/intro.jpg');
   background-size: cover;
   display: flex;
 }
 
-.intro__section {
+.intro {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -12,13 +12,13 @@
   animation: jump 1.5s;
 }
 
-.intro__section:hover .intro__button--btn {
+.intro:hover .intro__button--btn {
   background-color: #1c5bc3;
   color: #fff;
   transition: 0.1s;
 }
 
-.intro__section:hover .intro__button--text:after {
+.intro:hover .intro__button--text:after {
   background-position: -199px -10px;
 }
 
