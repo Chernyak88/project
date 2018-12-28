@@ -61,6 +61,7 @@
   appearance: none;
   outline: none;
   vertical-align: middle;
+  margin-right: 5px;
 }
 
 .radio::before {

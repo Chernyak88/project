@@ -12,13 +12,13 @@
   animation: jump 1.5s;
 }
 
-.intro:hover .intro__button--btn {
+.intro:hover .intro__button {
   background-color: #1c5bc3;
   color: #fff;
   transition: 0.1s;
 }
 
-.intro:hover .intro__button--text:after {
+.intro:hover .intro__button:after {
   background-position: -199px -10px;
 }
 
@@ -30,7 +30,7 @@
   margin-bottom: 40px;
 }
 
-.intro__button--btn {
+.intro__button {
   width: 200px;
   height: 45px;
   color: #2762c5;
@@ -45,8 +45,7 @@
   position: relative;
 }
 
-
-.intro__button--text:after {
+.intro__button:after {
   content: '';
   display: inline-block;
   position: absolute;
