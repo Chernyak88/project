@@ -1,5 +1,5 @@
 # Учебный проект Loftschool
 
-# Portfolio Черняк Игорь
+# Airplanet Черняк Игорь
 
 # https://chernyak88.github.io/airplanet/
